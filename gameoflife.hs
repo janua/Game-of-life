@@ -1,5 +1,8 @@
 --Game of life
 
+import Data.List.Split (chunksOf)
+import Data.List (intercalate)
+
 main = do
 	putStrLn "Game of life!"
 	printBoard $ generateBoard 10 10
@@ -9,12 +12,13 @@ type Board = [Cell]
 data Cell = Dead | Alive
 
 generateBoard :: Int -> Int -> Board
-generateBoard x y = replicate size Dead
+generateBoard x y = replicate size Alive
 	where size = x * y
 
 
 printBoard :: Board -> IO ()
-printBoard b = mapM_ putChar $ map printCell b
+printBoard b = mapM_ putChar $ intercalate ['\n'] $ chunksOf 10 converted
+	where converted = map printCell b
 
 printCell :: Cell -> Char
 printCell c = case c of
