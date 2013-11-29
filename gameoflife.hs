@@ -3,9 +3,12 @@
 import Data.List.Split (chunksOf)
 import Data.List (intercalate)
 
+width = 10
+height = 10
+
 main = do
 	putStrLn "Game of life!"
-	printBoard $ generateBoard 10 10
+	printBoard $ generateBoard width height
 
 type Board = [Cell]
 
@@ -17,7 +20,7 @@ generateBoard x y = replicate size Alive
 
 
 printBoard :: Board -> IO ()
-printBoard b = mapM_ putChar $ intercalate ['\n'] $ chunksOf 10 converted
+printBoard b = mapM_ putChar $ intercalate ['\n'] $ chunksOf width converted
 	where converted = map printCell b
 
 printCell :: Cell -> Char
