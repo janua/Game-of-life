@@ -3,7 +3,10 @@
 import Data.List.Split (chunksOf)
 import Data.List (intercalate)
 
+width :: Int
 width = 10
+
+height:: Int
 height = 10
 
 main = do
