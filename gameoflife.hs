@@ -9,6 +9,12 @@ width = 10
 height:: Int
 height = 10
 
+deadCharacter :: Char
+deadCharacter = ' '
+
+aliveCharacter :: Char
+aliveCharacter = 'x'
+
 main = do
 	putStrLn "Game of life!"
 	printBoard $ generateBoard width height
@@ -28,5 +34,5 @@ printBoard b = mapM_ putChar $ intercalate ['\n'] $ chunksOf width converted
 
 printCell :: Cell -> Char
 printCell c = case c of
-	Dead -> ' '
-	Alive -> 'x'
+	Dead 	-> deadCharacter
+	Alive 	-> aliveCharacter
