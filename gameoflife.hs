@@ -36,3 +36,7 @@ printCell :: Cell -> Char
 printCell c = case c of
 	Dead 	-> deadCharacter
 	Alive 	-> aliveCharacter
+
+
+cycleBoard :: Board -> Board
+cycleBoard = undefined
