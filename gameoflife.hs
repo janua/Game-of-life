@@ -21,10 +21,12 @@ main = do
 
 type Board = [Cell]
 
+type Coord = (Int, Int)
+
 data Cell = Dead | Alive
 
 generateBoard :: Int -> Int -> Board
-generateBoard x y = replicate size Alive
+generateBoard x y = replicate size Dead
 	where size = x * y
 
 
@@ -40,3 +42,10 @@ printCell c = case c of
 
 cycleBoard :: Board -> Board
 cycleBoard = undefined
+
+neighbours :: Coord -> Board -> [Cell]
+neighbours = undefined
+
+getCell :: Coord -> Board -> Cell
+getCell (x, y) board = board !! position 
+	where position = x + (10 * y)
