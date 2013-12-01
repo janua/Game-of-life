@@ -23,7 +23,7 @@ type Board = [Cell]
 
 type Coord = (Int, Int)
 
-data Cell = Dead | Alive
+data Cell = Dead | Alive deriving (Eq)
 
 generateBoard :: Int -> Int -> Board
 generateBoard x y = replicate size Dead
