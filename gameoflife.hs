@@ -44,7 +44,56 @@ cycleBoard :: Board -> Board
 cycleBoard = undefined
 
 neighbours :: Coord -> Board -> [Cell]
-neighbours = undefined
+neighbours coord board = 
+	getCell (topLeft coord) board
+	: getCell (up coord) board
+	: getCell (topRight coord) board
+	: getCell (left coord) board
+	: getCell (right coord) board
+	: getCell (bottomLeft coord) board
+	: getCell (down coord) board
+	: getCell (bottomRight coord) board
+	: []
+
+left :: Coord -> Coord
+left (x, y) =
+	let x' = x - 1
+	in case () of _
+					| x' < 0  	-> (width - 1, y)
+					| otherwise -> (x', y)
+
+right :: Coord -> Coord
+right (x, y) =
+	let x' = x + 1
+	in case () of _
+					| x' >= width  	-> (0, y)
+					| otherwise -> (x', y)
+
+up :: Coord -> Coord
+up (x, y) =
+	let y' = y - 1
+	in case () of _
+					| y' < 0	-> (x, height - 1)
+					| otherwise	-> (x, y')
+
+down :: Coord -> Coord
+down (x, y) =
+	let y' = y + 1
+	in case () of _
+					| y' >= height	-> (x, 0)
+					| otherwise	-> (x, y')
+
+topLeft :: Coord -> Coord
+topLeft coord = left $ up coord
+
+topRight :: Coord -> Coord
+topRight coord = right $ up coord
+
+bottomLeft :: Coord -> Coord
+bottomLeft coord = left $ down coord
+
+bottomRight :: Coord -> Coord
+bottomRight coord = right $ down coord
 
 getCell :: Coord -> Board -> Cell
 getCell (x, y) board = board !! position 
