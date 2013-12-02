@@ -19,7 +19,9 @@ aliveCharacter = 'x'
 
 main = do
 	putStrLn "Game of life!"
-	printBoard $ generateBoard width height
+	let b = take 5 $ iterate cycleBoard $ generateBoard 10 10
+	mapM_ (\board -> putStrLn "\n-----" >> printBoard board) b
+
 
 type Board = [Cell]
 
