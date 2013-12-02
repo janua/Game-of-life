@@ -9,7 +9,7 @@
  - 2 for a board with oscillators
  - 3 for a board with the glider
 
-    
+``` 
     $ ./gameoflife 1
     Game of life!
     
@@ -68,3 +68,4 @@
     x  x  x x 
      x x   x  
       x              
+```
