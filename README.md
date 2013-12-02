@@ -9,62 +9,62 @@
  - 2 for a board with oscillators
  - 3 for a board with the glider
 
-
-	$ ./gameoflife 1
-	Game of life!
-
-	-----
-		  
-	      xx  
-	 xx  x  x 
-	 xx   xx  
-		  
-		  
-	 xx   xx  
-	x  x  x x 
-	 x x   x  
-	  x       
-	-----
-		  
-	      xx  
-	 xx  x  x 
-	 xx   xx  
-		  
-		  
-	 xx   xx  
-	x  x  x x 
-	 x x   x  
-	  x       
-	-----
-		  
-	      xx  
-	 xx  x  x 
-	 xx   xx  
-		  
-		  
-	 xx   xx  
-	x  x  x x 
-	 x x   x  
-	  x       
-	-----
-		  
-	      xx  
-	 xx  x  x 
-	 xx   xx  
-		  
-		  
-	 xx   xx  
-	x  x  x x 
-	 x x   x  
-	  x       
-	-----
-		  
-	      xx  
-	 xx  x  x 
-	 xx   xx  
-		  
-		  
-	 xx   xx  
-	x  x  x x 
-	 x x   x  
-	  x              
+    
+    $ ./gameoflife 1
+    Game of life!
+    
+    -----
+    	  
+          xx  
+     xx  x  x 
+     xx   xx  
+    	  
+    	  
+     xx   xx  
+    x  x  x x 
+     x x   x  
+      x       
+    -----
+    	  
+          xx  
+     xx  x  x 
+     xx   xx  
+    	  
+    	  
+     xx   xx  
+    x  x  x x 
+     x x   x  
+      x       
+    -----
+    	  
+          xx  
+     xx  x  x 
+     xx   xx  
+    	  
+    	  
+     xx   xx  
+    x  x  x x 
+     x x   x  
+      x       
+    -----
+    	  
+          xx  
+     xx  x  x 
+     xx   xx  
+    	  
+    	  
+     xx   xx  
+    x  x  x x 
+     x x   x  
+      x       
+    -----
+    	  
+          xx  
+     xx  x  x 
+     xx   xx  
+    	  
+    	  
+     xx   xx  
+    x  x  x x 
+     x x   x  
+      x              
