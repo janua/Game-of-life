@@ -1,5 +1,7 @@
 --Game of life
 
+module GameOfLife where
+
 import Data.List.Split (chunksOf)
 import Data.List (intercalate)
 
