@@ -82,8 +82,8 @@ right :: Coord -> Coord
 right (x, y) =
 	let x' = x + 1
 	in case () of _
-					| x' >= width  	-> (0, y)
-					| otherwise -> (x', y)
+					| x' >  width - 1  	-> (0, y)
+					| otherwise 		-> (x', y)
 
 up :: Coord -> Coord
 up (x, y) =
@@ -96,8 +96,8 @@ down :: Coord -> Coord
 down (x, y) =
 	let y' = y + 1
 	in case () of _
-					| y' >= height	-> (x, 0)
-					| otherwise	-> (x, y')
+					| y' > height - 1	-> (x, 0)
+					| otherwise		-> (x, y')
 
 topLeft :: Coord -> Coord
 topLeft coord = left $ up coord
