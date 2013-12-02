@@ -114,3 +114,17 @@ bottomRight coord = right $ down coord
 getCell :: Coord -> Board -> Cell
 getCell (x, y) board = board !! position 
 	where position = x + (10 * y)
+
+--TestData
+testBoardStatic :: Board
+testBoardStatic =
+	[Dead, Dead, Dead, Dead, Dead, Dead, Dead, Dead, Dead, Dead]
+	++ [Dead, Dead, Dead, Dead, Dead, Dead, Alive, Alive, Dead, Dead]
+	++ [Dead, Alive, Alive, Dead, Dead, Alive, Dead, Dead, Alive, Dead]
+	++ [Dead, Alive, Alive, Dead, Dead, Dead, Alive, Alive, Dead, Dead]
+	++ [Dead, Dead, Dead, Dead, Dead, Dead, Dead, Dead, Dead, Dead]
+	++ [Dead, Dead, Dead, Dead, Dead, Dead, Dead, Dead, Dead, Dead]
+	++ [Dead, Alive, Alive, Dead, Dead, Dead, Alive, Alive, Dead, Dead]
+	++ [Alive, Dead, Dead, Alive, Dead, Dead, Alive, Dead, Alive, Dead]
+	++ [Dead, Alive, Dead, Alive, Dead, Dead, Dead, Alive, Dead, Dead]
+	++ [Dead, Dead, Alive, Dead, Dead, Dead, Dead, Dead, Dead, Dead]
