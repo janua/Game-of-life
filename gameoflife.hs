@@ -45,16 +45,18 @@ printCell c = case c of
 
 
 cycleBoard :: Board -> Board
-cycleBoard board = map (\(x, y) -> rule $ neighbours (x, y) board) allCoords
+cycleBoard board = map (\coord -> rule (getCell coord board) $ neighbours coord board) allCoords
 	where allCoords = do
-		x <- [0..width-1]
 		y <- [0..height-1]
+		x <- [0..width-1]
 		return (x, y)
 
-rule :: [Cell] -> Cell
-rule cells = case () of _
-							| aliveCells >= 2 && aliveCells <= 3 -> Alive
-							| otherwise -> Dead 
+rule :: Cell -> [Cell] -> Cell
+rule currentCell cells = case currentCell of 
+						Dead 	| aliveCells == 3 -> Alive
+								| otherwise -> Dead
+						Alive 	| aliveCells == 2 || aliveCells == 3 -> Alive
+								| otherwise -> Dead 
 	where aliveCells = length $ filter (\c -> c == Alive) cells
 
 neighbours :: Coord -> Board -> [Cell]
