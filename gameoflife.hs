@@ -19,7 +19,7 @@ aliveCharacter = 'x'
 
 main = do
 	putStrLn "Game of life!"
-	let b = take 5 $ iterate cycleBoard $ generateBoard 10 10
+	let b = take 5 $ iterate cycleBoard $ testGlider
 	mapM_ (\board -> putStrLn "\n-----" >> printBoard board) b
 
 
@@ -128,3 +128,29 @@ testBoardStatic =
 	++ [Alive, Dead, Dead, Alive, Dead, Dead, Alive, Dead, Alive, Dead]
 	++ [Dead, Alive, Dead, Alive, Dead, Dead, Dead, Alive, Dead, Dead]
 	++ [Dead, Dead, Alive, Dead, Dead, Dead, Dead, Dead, Dead, Dead]
+
+testBoardBlinkers :: Board
+testBoardBlinkers =
+	[Dead, Dead, Dead, Dead, Dead, Dead, Dead, Dead, Dead, Dead]
+	++ [Dead, Alive, Dead, Dead, Dead, Dead, Alive, Dead, Dead, Dead]
+	++ [Dead, Alive, Dead, Dead, Alive, Dead, Dead, Alive, Dead, Dead]
+	++ [Dead, Alive, Dead, Dead, Alive, Dead, Dead, Alive, Dead, Dead]
+	++ [Dead, Dead, Dead, Dead, Dead, Alive, Dead, Dead, Dead, Dead]
+	++ [Dead, Dead, Dead, Dead, Dead, Dead, Dead, Dead, Dead, Dead]
+	++ [Dead, Alive, Alive, Dead, Dead, Dead, Dead, Dead, Dead, Dead]
+	++ [Dead, Alive, Alive, Dead, Dead, Dead, Dead, Dead, Dead, Dead]
+	++ [Dead, Dead, Dead, Alive, Alive, Dead, Dead, Dead, Dead, Dead]
+	++ [Dead, Dead, Dead, Alive, Alive, Dead, Dead, Dead, Dead, Dead]
+
+testGlider :: Board
+testGlider =
+	[Dead, Dead, Dead, Dead, Dead, Dead, Dead, Dead, Dead, Dead]
+	++ [Dead, Dead, Alive, Dead, Dead, Dead, Dead, Dead, Dead, Dead]
+	++ [Alive, Dead, Alive, Dead, Dead, Dead, Dead, Dead, Dead, Dead]
+	++ [Dead, Alive, Alive, Dead, Dead, Dead, Dead, Dead, Dead, Dead]
+	++ [Dead, Dead, Dead, Dead, Dead, Dead, Dead, Dead, Dead, Dead]
+	++ [Dead, Dead, Dead, Dead, Dead, Dead, Dead, Dead, Dead, Dead]
+	++ [Dead, Dead, Dead, Dead, Dead, Dead, Dead, Dead, Dead, Dead]
+	++ [Dead, Dead, Dead, Dead, Dead, Dead, Dead, Dead, Dead, Dead]
+	++ [Dead, Dead, Dead, Dead, Dead, Dead, Dead, Dead, Dead, Dead]
+	++ [Dead, Dead, Dead, Dead, Dead, Dead, Dead, Dead, Dead, Dead]
