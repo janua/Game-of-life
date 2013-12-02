@@ -1,9 +1,10 @@
 --Game of life
 
-module GameOfLife where
+module Main where
 
 import Data.List.Split (chunksOf)
 import Data.List (intercalate)
+import System.Environment
 
 width :: Int
 width = 10
@@ -17,9 +18,11 @@ deadCharacter = ' '
 aliveCharacter :: Char
 aliveCharacter = 'x'
 
+main :: IO ()
 main = do
 	putStrLn "Game of life!"
-	let b = take 5 $ iterate cycleBoard $ testGlider
+	testBoard : [] <- getArgs
+	let b = take 5 $ iterate cycleBoard $ getBoard $ read testBoard
 	mapM_ (\board -> putStrLn "\n-----" >> printBoard board) b
 
 
@@ -28,6 +31,11 @@ type Board = [Cell]
 type Coord = (Int, Int)
 
 data Cell = Dead | Alive deriving (Eq)
+
+getBoard :: Int -> Board
+getBoard 1 = testBoardStatic
+getBoard 2 = testBoardBlinkers
+getBoard _ = testGlider
 
 generateBoard :: Int -> Int -> Board
 generateBoard x y = replicate size Dead
