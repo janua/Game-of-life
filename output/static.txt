@@ -1,0 +1,57 @@
+Game of life!
+
+-----
+          
+      xx  
+ xx  x  x 
+ xx   xx  
+          
+          
+ xx   xx  
+x  x  x x 
+ x x   x  
+  x       
+-----
+          
+      xx  
+ xx  x  x 
+ xx   xx  
+          
+          
+ xx   xx  
+x  x  x x 
+ x x   x  
+  x       
+-----
+          
+      xx  
+ xx  x  x 
+ xx   xx  
+          
+          
+ xx   xx  
+x  x  x x 
+ x x   x  
+  x       
+-----
+          
+      xx  
+ xx  x  x 
+ xx   xx  
+          
+          
+ xx   xx  
+x  x  x x 
+ x x   x  
+  x       
+-----
+          
+      xx  
+ xx  x  x 
+ xx   xx  
+          
+          
+ xx   xx  
+x  x  x x 
+ x x   x  
+  x       
