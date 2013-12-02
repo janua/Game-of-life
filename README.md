@@ -1,6 +1,6 @@
 # Conway's Game of Life
 
-`ghc -o gameoflife gameoflife.gs`
+`ghc -o gameoflife gameoflife.hs`
 
 ## Usage
 `./gameoflife arg iterations`
