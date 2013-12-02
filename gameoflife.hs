@@ -21,8 +21,8 @@ aliveCharacter = 'x'
 main :: IO ()
 main = do
 	putStrLn "Game of life!"
-	testBoard : [] <- getArgs
-	let b = take 5 $ iterate cycleBoard $ getBoard $ read testBoard
+	testBoard : iterations : [] <- getArgs
+	let b = take (read iterations) $ iterate cycleBoard $ getBoard $ read testBoard
 	mapM_ (\board -> putStrLn "\n-----" >> printBoard board) b
 
 

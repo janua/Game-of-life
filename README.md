@@ -3,14 +3,14 @@
 `ghc -o gameoflife gameoflife.gs`
 
 ## Usage
-`./gameoflife arg`
+`./gameoflife arg iterations`
 
  - 1 for a board with static life forms
  - 2 for a board with oscillators
  - 3 for a board with the glider
 
 ``` 
-    $ ./gameoflife 1
+    $ ./gameoflife 1 5
     Game of life!
     
     -----
