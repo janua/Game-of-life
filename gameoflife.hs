@@ -121,7 +121,7 @@ bottomRight coord = right $ down coord
 
 getCell :: Coord -> Board -> Cell
 getCell (x, y) board = board !! position 
-	where position = x + (10 * y)
+	where position = x + (width * y)
 
 --TestData
 testBoardStatic :: Board
