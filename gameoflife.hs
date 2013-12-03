@@ -162,3 +162,23 @@ testGlider =
 	++ [Dead, Dead, Dead, Dead, Dead, Dead, Dead, Dead, Dead, Dead]
 	++ [Dead, Dead, Dead, Dead, Dead, Dead, Dead, Dead, Dead, Dead]
 	++ [Dead, Dead, Dead, Dead, Dead, Dead, Dead, Dead, Dead, Dead]
+
+testPulsar :: Board
+testPulsar =
+	[Dead, Dead, Dead, Dead, Dead, Dead, Dead, Dead, Dead, Dead, Dead, Dead, Dead, Dead, Dead, Dead, Dead]
+	++ [Dead, Dead, Dead, Dead, Dead, Dead, Dead, Dead, Dead, Dead, Dead, Dead, Dead, Dead, Dead, Dead, Dead]
+	++ [Dead, Dead, Dead, Dead, Alive, Alive, Alive, Dead, Dead, Dead, Alive, Alive, Alive, Dead, Dead, Dead, Dead]
+	++ [Dead, Dead, Dead, Dead, Dead, Dead, Dead, Dead, Dead, Dead, Dead, Dead, Dead, Dead, Dead, Dead, Dead]
+	++ [Dead, Dead, Alive, Dead, Dead, Dead, Dead, Alive, Dead, Alive, Dead, Dead, Dead, Dead, Alive, Dead, Dead]
+	++ [Dead, Dead, Alive, Dead, Dead, Dead, Dead, Alive, Dead, Alive, Dead, Dead, Dead, Dead, Alive, Dead, Dead]
+	++ [Dead, Dead, Alive, Dead, Dead, Dead, Dead, Alive, Dead, Alive, Dead, Dead, Dead, Dead, Alive, Dead, Dead]
+	++ [Dead, Dead, Dead, Dead, Alive, Alive, Alive, Dead, Dead, Dead, Alive, Alive, Alive, Dead, Dead, Dead, Dead]
+	++ [Dead, Dead, Dead, Dead, Dead, Dead, Dead, Dead, Dead, Dead, Dead, Dead, Dead, Dead, Dead, Dead, Dead]
+	++ [Dead, Dead, Dead, Dead, Alive, Alive, Alive, Dead, Dead, Dead, Alive, Alive, Alive, Dead, Dead, Dead, Dead]
+	++ [Dead, Dead, Alive, Dead, Dead, Dead, Dead, Alive, Dead, Alive, Dead, Dead, Dead, Dead, Alive, Dead, Dead]
+	++ [Dead, Dead, Alive, Dead, Dead, Dead, Dead, Alive, Dead, Alive, Dead, Dead, Dead, Dead, Alive, Dead, Dead]
+	++ [Dead, Dead, Alive, Dead, Dead, Dead, Dead, Alive, Dead, Alive, Dead, Dead, Dead, Dead, Alive, Dead, Dead]
+	++ [Dead, Dead, Dead, Dead, Dead, Dead, Dead, Dead, Dead, Dead, Dead, Dead, Dead, Dead, Dead, Dead, Dead]
+	++ [Dead, Dead, Dead, Dead, Alive, Alive, Alive, Dead, Dead, Dead, Alive, Alive, Alive, Dead, Dead, Dead, Dead]
+	++ [Dead, Dead, Dead, Dead, Dead, Dead, Dead, Dead, Dead, Dead, Dead, Dead, Dead, Dead, Dead, Dead, Dead]
+	++ [Dead, Dead, Dead, Dead, Dead, Dead, Dead, Dead, Dead, Dead, Dead, Dead, Dead, Dead, Dead, Dead, Dead]
